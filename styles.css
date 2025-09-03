@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #1e1e1e, #121212);
+}
+
+/* Calculator Container */
+.container {
+  width: 300px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(30, 30, 30, 0.85);
+  box-shadow: 8px 8px 16px #0e0e0e, -8px -8px 16px #2e2e2e;
+
+}
+
+/* Result Box */
+.result-box {
+  margin-bottom: 20px;
+}
+
+.result-box input {
+  width: 100%;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+/* Button Box Grid */
+.button-box {
+  display: grid;
+  gap: 15px;
+}
+
+/* General Button Style */
+button {
+  padding: 18px;
+  margin: auto 0px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #1c1c1c;
+  box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #2d2d2d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height:60px;
+  width:60px;
+}
+
+button:active {
+  box-shadow: inset 4px 4px 8px #0f0f0f, inset -4px -4px 8px #2d2d2d;
+}
+
+/* Special Buttons */
+.sp-button {
+  color: #00ff73;
+}
+
+#equal {
+  grid-column: span 2;
+  background: #ff6600;
+  color: white;
+  box-shadow: -5px -5px 12px 0px #0f0f0f, 0px 0px 12px #ff8533;
+}
+
+#equal:active {
+  box-shadow: inset 4px 4px 8px #b34700, inset -4px -4px 8px #ff944d;
+}
+
+/* Hover Effect */
+button:hover {
+  filter: brightness(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px), (orientation: portrait) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 98vw;
+        max-width: 98vw;
+        min-height: 95vh;
+        padding: 60px 4px; /* Reduced top/bottom padding */
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    
+    }
+
+    .result-box input {
+        font-size: 7rem;
+        padding: 64px;
+    }
+
+    button {
+        font-size: 5rem;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        
+    }
+
+    .button-box {
+        gap: 48px;
+    }
+    }
+
