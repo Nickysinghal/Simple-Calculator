@@ -20,4 +20,4 @@ calculator/
 │── README.md    # Project description
 
 Live Demo
-https://your-username.github.io/calculator/
+https://nickysinghal.github.io/Simple-Calculator/
